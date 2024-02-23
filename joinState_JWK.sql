@@ -71,10 +71,10 @@ LOAD DATA LOCAL INFILE '/home/jwkern/Downloads/debt_data.csv' REPLACE INTO TABLE
 /*______________________________________________________________________________
 Step 3: Select subset of data and calculate properties
 _______________________________________________________________________________*/
-CREATE TABLE personalDebtTable AS SELECT first_name, last_name, birth_date, phone_number, email, street_address, city, state, credit_card_type, credit_card_number, credit_card_expiration_date
+CREATE TABLE personalDebtTable AS SELECT peopleInfo.first_name, peopleInfo.last_name, peopleInfo.birth_date, peopleInfo.phone_number, peopleInfo.email, peopleInfo.street_address, peopleInfo.city, peopleInfo.state, peopleInfo.credit_card_type, peopleInfo.credit_card_number, peopleInfo.credit_card_expiration_date, debtInfo.social_security_number, debtInfo.bank_account_number, debtInfo.debt, debtInfo.apr_rate, debtInfo.loanLength
 FROM peopleInfo
-	JOIN debtInfo
-	ON peopleInfo.social_security_number = debtInfo.social_security_number;
+        RIGHT JOIN debtInfo
+        ON peopleInfo.social_security_number = debtInfo.social_security_number;
 
 
 CREATE TABLE genTable AS SELECT YEAR(birth_date) AS birth_year,  
