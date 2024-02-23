@@ -42,7 +42,7 @@ An example schema of each persons information is given below:
 
 ___________________________________________________________________________________________________________________________________________________________________
 CODE DESCRIPTION:
-This SQL code (caseState.sql) imports the data (people_data.csv, debt_data.csv), and uses a join statement to extract the contact info for the people listed to have debt. Then case statements are used to calculate the percentage of patients with debt who are in a particular generation bin (e.g. Baby Boomers, Millennials, etc.) based on the following age brackets:
+This SQL code (joinState.sql) imports the data (people_data.csv, debt_data.csv), and uses a join statement to extract the contact info for the people listed to have debt. Then case statements are used to calculate the percentage of patients with debt who are in a particular generation bin (e.g. Baby Boomers, Millennials, etc.) based on the following age brackets:
 
     Greatest Generation (1901-1924) ...
     Silent Generation (1925-1945) ...
