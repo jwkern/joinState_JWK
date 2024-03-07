@@ -1,7 +1,7 @@
 /*______________________________________________________________________________
 CODE DESCRIPTION: 
 
-This SQL code (caseState_JWK.sql) creates a table in a miscellaneous database
+This SQL code (joinState_JWK.sql) creates a table in a miscellaneous database
 containing toy data of a list of people and their demographics (i.e. age, race,
 etc.), and then employs case statements to briefly analyze the data and report 
 certain metrics.
